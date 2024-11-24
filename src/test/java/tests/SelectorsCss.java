@@ -13,6 +13,10 @@ public class SelectorsCss {
         driver.navigate().to("https://ilcarro.web.app/search");
         WebElement elementText = driver.findElement(By.cssSelector("h1"));
         System.out.println(elementText.getText());
+        WebElement btnRegistration = driver.findElement(By.cssSelector("*[ng-reflect-router-link=\'registration\']"));
+        System.out.println(btnRegistration.getText());
+        btnRegistration.click();
+
 
         driver.quit();
 
