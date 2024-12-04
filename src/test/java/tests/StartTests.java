@@ -37,7 +37,7 @@ public class StartTests {
         System.out.println(elementText.getText());
 
 
-        WebElement btnAbout = driver.findElement(By.cssSelector("a[href='about'"));
+        WebElement btnAbout = driver.findElement(By.cssSelector("a[href='/about'"));
         System.out.println("tag name -> " + btnAbout.getTagName());
         System.out.println("text -> " + btnAbout.getText());
 
